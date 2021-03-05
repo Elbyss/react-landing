@@ -1,11 +1,16 @@
 import './App.css';
 import QuadLanding from './components/QuadLanding';
 import { createGlobalStyle } from 'styled-components';
+import palette from './static/palette';
 
 const GlobalStyle = createGlobalStyle`
   html {
     margin: 0;
     padding: 0;
+    /* background-color: ${palette.gray[9]}; */
+    background-color: black;
+    width: 100%;
+    height: 100%;
   }
   .slick-slide div {
     position: relative;
