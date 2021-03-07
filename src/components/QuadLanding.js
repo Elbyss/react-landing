@@ -13,19 +13,23 @@ import Cyber from '../static/img/cyber_killchain.jpg';
 import mac from '../static/img/mac2.png';
 import insider from '../static/img/insider_threat.png';
 import Slide from 'react-reveal/Slide';
+import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 // import Wave from 'react-wavify';
 // import Reveal from 'react-reveal/Reveal';
 // import Spin from 'react-reveal/Spin';
 // import Flip from 'react-reveal/Flip';
-// import LightSpeed from 'react-reveal/LightSpeed';
+import LightSpeed from 'react-reveal/LightSpeed';
 // import Button from '@material-ui/core/Button';
 // import Box from '@material-ui/core/Box';
-// import Roll from 'react-reveal/Roll';
+import Roll from 'react-reveal/Roll';
 import datasvg from '../static/img/datasvg.svg';
 import macpro from '../static/img/macpro.jpg';
 import cloud from '../static/img/cloud.svg';
 import statistics from '../static/img/statistics.svg';
+import Pulse from 'react-reveal/Pulse';
+import Rotate from 'react-reveal/Rotate';
 
 const LandingTitle = styled.div`
   position: absolute;
@@ -192,16 +196,18 @@ const QuadLanding = () => {
     <>
       <div>
         <LandingTitle>
-          {/* Inspire Threat */}
-          <div style={{ textAlign: 'center' }}>
-            <img src={insider} alt='ab' width='600px' />
-          </div>
-          <LandingDescription>
-            조직의 임직원이 회사나 정보 통신(IT) 시스템에 보안상 위협을 가하는
-            행위 보통 바이러스나 해커의 공격과 같은 외부 위협이 아닌 인가된 내부
-            사용자에 대한 위협을 말한다. 인가된 사용자들은 쉽게 비밀 자료에
-            접근할 수 있는 점을 이용한다.
-          </LandingDescription>
+          <Rotate top left>
+            {/* Inspire Threat */}
+            <div style={{ textAlign: 'center' }}>
+              <img src={insider} alt='ab' width='600px' />
+            </div>
+            <LandingDescription>
+              조직의 임직원이 회사나 정보 통신(IT) 시스템에 보안상 위협을 가하는
+              행위 보통 바이러스나 해커의 공격과 같은 외부 위협이 아닌 인가된
+              내부 사용자에 대한 위협을 말한다. 인가된 사용자들은 쉽게 비밀
+              자료에 접근할 수 있는 점을 이용한다.
+            </LandingDescription>
+          </Rotate>
         </LandingTitle>
 
         <ProductContainer>
@@ -304,11 +310,11 @@ const QuadLanding = () => {
         <IntroduceText2>
           <div
             style={{
-              // width: '150px',
-              width: '100%',
+              width: '200px',
+              // maxWidth: '100%',
               position: 'absolute',
               right: '500px',
-              textAlign: 'center',
+              // textAlign: 'center',
               zIndex: '1',
             }}
           >
