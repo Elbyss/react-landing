@@ -1,0 +1,105 @@
+@import '../static/palette';
+
+$palette: (
+ blue           : #22678C,
+ lighterBlue    : #48525C,
+ yellow         : #ffa949,
+);
+
+.LandingTitle {
+  position: absolute;
+  width: 750px;
+  max-width: 100%;
+  top: 100px;
+  left: 50%;
+  margin-left: calc(750px / -2);
+  opacity: 0.8;
+  z-index: 2;
+  /* color: ${palette.gray[1]}; */
+  box-shadow: 3px 3px 10px -15px black;
+}
+
+.LandingDescription {
+  font-size: 1.125rem;
+  font-weight: 400;
+  // color: $palette.gray[8];
+}
+
+.LandingDescription2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  width: 800px;
+  max-width: 100%;
+  margin-top: 350px;
+  // color: ${palette.gray[5]};
+}
+.LandingDescription3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  width: 800px;
+  max-width: 100%;
+  margin-top: 100px;
+  // color: ${palette.gray[5]};
+}
+
+.IntroduceTextDescription {
+  font-size: 1.5rem;
+  font-weight: 400;
+  // color: ${palette.gray[5]};
+  text-align: center;
+  padding: 1.25rem;
+}
+
+
+.ProductContainer {
+  /* margin-top: 50px; */
+  height: 550px;
+  max-width: 100%;
+  z-index: 1;
+  outline: none;
+  border: 0;
+  /* background-color: ${palette.gray[9]}; */
+  /* background-color: red; */
+  /* margin-bottom: 10px; */
+  opacity: 0.7;
+}
+
+.FeaturesContainer {
+  /* border: 1px solid red; */
+  max-width: 100%;
+  height: 300px;
+  margin-bottom: 1200px;
+}
+
+.FeatureTitle {
+  max-width: 100%;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  // color: ${palette.gray[2]};
+  opacity: 0.8;
+  margin-bottom: 50px;
+  background: linear-gradient(to left, coral, lightgray);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  .FeatureTitle2 {
+    font-size: 4rem;
+    background: linear-gradient(to left, orange, lightgray);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+  }
+}
+
+const FeatureTitleDescription = styled.p`
+  max-width: 100%;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: left;
+  display: table;
+  margin: 30px auto;
+  color: ${palette.gray[2]};
+  opacity: 0.8;
+  `;

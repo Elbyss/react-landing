@@ -4,7 +4,17 @@ import { createGlobalStyle } from 'styled-components';
 import palette from './static/palette';
 
 const GlobalStyle = createGlobalStyle`
+@media (max-width: 768px) {
   html {
+    font-size: 0.5rem;
+  }
+  img {
+    max-width: 100%;
+    /* width: 200px; */
+  }
+}
+
+    html {
     margin: 0;
     padding: 0;
     /* background-color: ${palette.gray[9]}; */
@@ -17,9 +27,11 @@ const GlobalStyle = createGlobalStyle`
     height: 550px;
     max-width: 100%;
     color: black;
-    outline: none; // 슬라이드 클릭시 파란선을 제거하기 위해서 작성
     /* background-color: black; */
     z-index: 1;
+  }
+  .test {
+    color: red;
   }
 `;
 
